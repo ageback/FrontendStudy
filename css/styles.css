@@ -1,11 +1,25 @@
-h1{
-    font-family: serif;
+h1 {
+    color: #2f4f4f;
+    margin-bottom: 10px;
 }
 
-#page-title{
-    font-family: sans-serif;
+#main-nav {
+    margin-top: 10px;
+
+    /* 删除用户代理的列表样式 */
+    list-style: none;
+    padding-left: 0;
 }
 
-.title {
-    font-family: monospace;
+#main-nav li {
+    display: inline-block; /*让列表元素水平排列，而不是上下叠放*/
+}
+
+/* 给导航链接加上类似按钮的外观 */
+#main-nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
 }
