@@ -1,3 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+a:link {color: blue;}
+
 h1 {
     color: #2f4f4f;
     margin-bottom: 10px;
@@ -26,4 +32,17 @@ h1 {
 
 a.featured {
     background-color: orange;
+}
+
+.footer {
+    color: #666;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: underline;
 }
