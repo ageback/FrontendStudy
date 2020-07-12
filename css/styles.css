@@ -3,7 +3,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-#main-nav {
+.nav {
     margin-top: 10px;
 
     /* 删除用户代理的列表样式 */
@@ -11,12 +11,12 @@ h1 {
     padding-left: 0;
 }
 
-#main-nav li {
+.nav li {
     display: inline-block; /*让列表元素水平排列，而不是上下叠放*/
 }
 
 /* 给导航链接加上类似按钮的外观 */
-#main-nav a {
+.nav a {
     color: white;
     background-color: #13a4a4;
     padding: 5px;
@@ -24,6 +24,6 @@ h1 {
     text-decoration: none;
 }
 
-#main-nav .featured {
+.nav .featured {
     background-color: orange;
 }
