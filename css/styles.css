@@ -18,8 +18,12 @@ h1 {
 /* 给导航链接加上类似按钮的外观 */
 #main-nav a {
     color: white;
-    background-color: #13a4a4 !important;
+    background-color: #13a4a4;
     padding: 5px;
     border-radius: 2px;
     text-decoration: none;
+}
+
+#main-nav .featured {
+    background-color: orange;
 }
