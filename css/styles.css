@@ -10,9 +10,6 @@ h1 {
     font-weight: bold;
 }
 
-.title{
-    font: 32px Helvetica, Arial, sans-serif;
-}
 
 .nav {
     margin-top: 10px;
@@ -35,8 +32,9 @@ h1 {
     text-decoration: none;
 }
 
-a.featured {
+.nav .featured {
     background-color: orange;
+    box-shadow: 5px 3px #6f9090;
 }
 
 .footer {
