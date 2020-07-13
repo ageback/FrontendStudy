@@ -17,20 +17,41 @@
     font-size: 18px;
 }
 
-body {
+/* body {
     font-size: 16px;
-}
+} */
 
 .slogan {
     font-size: 1.2em;
     padding: 1.2em;
     background-color: #ccc;
 }
-
+/* 
 ul {
     font-size: 0.8em;
 }
 
 ul ul {
     font-size: 1em;
+} */
+
+:root {
+    font-size: 0.875em;
+}
+
+ul {
+    font-size: 0.8rem;
+}
+
+.panel {
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+}
+
+.panel > h2 {
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
