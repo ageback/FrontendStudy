@@ -17,9 +17,10 @@
     font-size: 18px;
 }
 
-/* body {
-    font-size: 16px;
-} */
+body {
+    line-height: 1.2em;
+    /* font-size: 16px; */
+} 
 
 .slogan {
     font-size: 1.2em;
@@ -36,10 +37,11 @@ ul ul {
 } */
  
 :root {
+    /* font-size: calc(0.5em + 1vw); */
     font-size: 0.75em;
 }
 
-@media (min-width: 800px)
+/* @media (min-width: 800px)
 {
     :root{
         font-size: 0.875em;
@@ -48,7 +50,7 @@ ul ul {
 
 @media (min-width: 1200px) {
     :root {font-size: 1em;}
-}
+} */
 
 ul {
     font-size: 0.8rem;
@@ -65,4 +67,14 @@ ul {
     font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.square {
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #369;
+}
+
+.about-us {
+    font-size: 2em;
 }
