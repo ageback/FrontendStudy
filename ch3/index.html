@@ -31,16 +31,28 @@
             display: block;
         }
 
+        .wrapper {
+            margin-left: -0.5em;
+            margin-right: -0.5em;
+        }
+
+        .container {
+            display: table;
+            width: 100%;
+            border-spacing: 0.5em 0;
+        }
+
         .main {
-            float: left;
+            display: table-cell;
             width: 70%;
             background-color: #fff;
             border-radius: .5em;
         }
 
         .sidebar {
-            float: left;
-            width: calc(30% - 0.5em);
+            display: table-cell;
+            width: 30%;
+            /* width: calc(30% - 0.5em); */
             margin-left: 0.5em;
             padding: 1.5em;
             background-color: #fff;
@@ -50,19 +62,21 @@
     <header>
         <h1>Franklin Running Club</h1>
     </header>
-    <div class="container">
-        <main class="main">
-            <h2>Come join us!</h2>
-            <p>
-                The Franklin Running club meets at 6:00pm every Thursday
-                at the town square. Runs are three to five miles, at your
-                own pace.
-            </p>
-        </main>
-        <aside class="sidebar">
-            <div class="widget"></div>
-            <div class="widget"></div>
-        </aside>
+    <div class="wrapper">
+        <div class="container">
+            <main class="main">
+                <h2>Come join us!</h2>
+                <p>
+                    The Franklin Running club meets at 6:00pm every Thursday
+                    at the town square. Runs are three to five miles, at your
+                    own pace.
+                </p>
+            </main>
+            <aside class="sidebar">
+                <div class="widget"></div>
+                <div class="widget"></div>
+            </aside>
+        </div>
     </div>
 </body>
 </html>
