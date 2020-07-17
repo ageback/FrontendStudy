@@ -21,7 +21,15 @@
             font-family: Helvetica, Arial, sans-serif;
         }
 
+        body * + * {
+            margin-top: 1.5em;
+        }
+
         header {
+            /* 相同的上下内边距，不用指定高度也能让元素内容垂直居中。但是在实际项目中不要这样用。 */
+            /* padding-top: 4em;
+            padding-bottom: 4em; */
+            padding: 1em 1.5em;
             color: #fff;
             background-color: #0072b0;
             border-radius: 0.5em;
@@ -38,21 +46,51 @@
 
         .container {
             display: flex;
+            
         }
 
         .main {
             width: 70%;
+            padding: 1em 1.5em;
             background-color: #fff;
             border-radius: .5em;
         }
 
         .sidebar {
             width: 30%;
-            /* width: calc(30% - 0.5em); */
+            /* 移除猫头鹰选择器(* + *)设置的顶部外边距 */
+            margin-top: 0;
             margin-left: 0.5em;
             padding: 1.5em;
             background-color: #fff;
             border-radius: 0.5em;
+        }
+
+        .button-link {
+            display: block;
+            padding: 0.5em;
+            color: #fff;
+            background-color: #0090c9;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+
+
+        .sponsor-link {
+            display: block;
+            color: #0072b0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        h2 {
+            background-color: aqua;
+        }
+
+        p {
+            background-color: brown;
         }
     </style>
     <header>
@@ -69,8 +107,9 @@
             </p>
         </main>
         <aside class="sidebar">
-            <div class="widget"></div>
-            <div class="widget"></div>
+            <a class="button-link" href="/twitter">follow us on Twitter</a>
+            <a class="button-link" href="/facebook">like us on Facebook</a>
+            <a href="/sponsors" class="sponsor-link"> become a sponsor </a>
         </aside>
     </div>
 
