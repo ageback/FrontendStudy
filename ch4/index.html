@@ -59,6 +59,21 @@
                 clear:left;
             }
 
+            .media-image {
+                float: left;
+                margin-right: 1.5em;
+            }
+
+            .media-body {
+                /* 创建新的BFC */
+                overflow: auto;
+                margin-top: 0;
+            }
+
+            .media-body h4 {
+                margin-top: 0;
+            }
+
             .clearfix::before,
             .clearfix::after {
                 /* 防止伪元素的外边距折叠 */
